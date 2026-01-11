@@ -1,0 +1,19 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Storage
+STORAGE_URL = os.getenv("AZURE_STORAGE_ACCOUNT_URL")
+CONTAINER = os.getenv("BLOB_CONTAINER_NAME")
+
+# Search
+SEARCH_ENDPOINT = os.getenv("AZURE_SEARCH_ENDPOINT")
+SEARCH_INDEX = os.getenv("AZURE_SEARCH_INDEX_NAME")
+SEARCH_KEY = os.getenv("AZURE_SEARCH_API_KEY")
+
+# OpenAI
+OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+OPENAI_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+OPENAI_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
